@@ -1,7 +1,7 @@
 import { Products } from "./products.js";
 // Authentication
 if (!localStorage.getItem("user")) {
-  window.location.replace("/authentication.html");
+  window.location.replace("authentication.html");
 }
 
 let parentProducts = document.querySelector("#parentProducts");
