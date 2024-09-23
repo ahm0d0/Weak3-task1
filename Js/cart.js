@@ -1,6 +1,6 @@
 // Authentication
 if (!localStorage.getItem("user")) {
-  window.location.replace("/authentication.html");
+  window.location.replace("authentication.html");
 }
 
 let cartParent = document.querySelector("#cartParent");
