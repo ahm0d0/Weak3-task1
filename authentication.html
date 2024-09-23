@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <!-- Success Message -->
+    <div
+      id="messageSuccessfuly"
+      class="bg-white shadow-lg rounded-lg p-2 max-w-sm w-full text-center absolute top-10 right-5 opacity-0 transition-all"
+    >
+      <div class="flex justify-center mb-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-12 w-12 text-green-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      </div>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-2">
+        Login Successful
+      </h2>
+      <p class="text-gray-600 mb-4">
+        You have successfully logged in. Welcome back!
+      </p>
+    </div>
+
+    <!-- Faild Message -->
+    <div
+      id="FaildLogin"
+      class="bg-white shadow-lg rounded-lg p-6 max-w-sm w-full text-center absolute top-0 opacity-0 transition-all"
+    >
+      <div class="flex justify-center mb-4">
+        <h1>
+          <i
+            class="fa-solid fa-triangle-exclamation text-2xl text-yellow-500"
+          ></i>
+        </h1>
+      </div>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-2">Login Faild !</h2>
+      <p class="text-gray-600 mb-4">
+        You have Faild Login in. To Short UserName or Password!
+      </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Login</h2>
+      <form id="loginForm">
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">UserName</label>
+          <input
+            type="text"
+            id="text"
+            class="w-full p-2 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="w-full p-2 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+      </form>
+      <div class="flex gap-5">
+        <button
+          type="submit"
+          class="w-full bg-green-500 text-white p-2 rounded-lg"
+        >
+          SignUp
+        </button>
+        <button
+          id="LoginBtn"
+          class="w-full bg-blue-500 text-white p-2 rounded-lg"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+    <script src="Js/authentication.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-gradient-to-r from-blue-500 to-teal-500 p-4 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Brand -->
+        <a
+          href="home.html"
+          class="text-white text-3xl font-bold hover:text-gray-200 transition"
+          >MyShop</a
+        >
+
+        <!-- Menu Items -->
+        <div class="md:flex space-x-6">
+          <a
+            href="index.html"
+            class="nav-link text-white text-lg px-3 py-2 rounded transition-all hover:bg-slate-200 hover:text-yellow-500"
+            >Home</a
+          >
+          <a
+            href="cart.html"
+            class="nav-link text-white text-lg px-3 py-2 rounded transition-all hover:bg-slate-200 hover:text-yellow-500"
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><span
+              id="CartLentgh"
+              class="bg-red-600 w-4 h-4 inline-block absolute rounded-full text-white z-10 text-sm text-center"
+              >0</span
+            ></a
+          >
+          <a
+            href="authentication.html"
+            id="LogoutBtn"
+            class="bg-red-500 hover:bg-red-600 text-white text-lg px-4 py-2 rounded-lg transition"
+            >Logout</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div
+      id="parentProducts"
+      class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    >
+      <!-- Product Item -->
+
+      <h1 class="text-2xl font-semibold text-gray-700">Loading...</h1>
+
+      <!-- Repeat Product Item as needed -->
+    </div>
+
+    <!-- Success Message -->
+    <div
+      id="messageSuccessfuly"
+      class="bg-white shadow-lg rounded-lg p-2 max-w-sm w-full text-center fixed top-10 right-5 opacity-0 transition-all"
+    ></div>
+
+    <footer class="bg-gray-800 text-white p-4 w-full">
+      <div class="container mx-auto text-center">
+        <h2 class="text-lg font-semibold mb-2">Connect with Us</h2>
+        <p class="text-sm mb-4">© 2024 All Rights Reserved</p>
+        <div class="flex justify-center space-x-4">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">Contact Us</a>
+        </div>
+        <p class="text-xs mt-4">Designed by [Ahmed Hassan]</p>
+      </div>
+    </footer>
+
+    <script src="Js/index.js" type="module"></script>
+  </body>
+</html>

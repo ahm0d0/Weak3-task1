@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-gradient-to-r from-blue-500 to-teal-500 p-4 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Brand -->
+        <a
+          href="index.html"
+          class="text-white text-3xl font-bold hover:text-gray-200 transition"
+          >MyShop</a
+        >
+
+        <!-- Menu Items -->
+        <div class="md:flex space-x-6">
+          <a
+            href="index.html"
+            class="nav-link text-white text-lg px-3 py-2 rounded transition-all hover:bg-slate-200 hover:text-yellow-500"
+            >Home</a
+          >
+          <a
+            href="cart.html"
+            class="nav-link text-white text-lg px-5 py-2 rounded transition-all hover:bg-slate-200 hover:text-yellow-500"
+            ><i class="fa-solid fa-cart-shopping"></i>
+            <span
+              id="CartLentgh"
+              class="bg-red-600 w-4 h-4 inline-block absolute rounded-full text-white z-10 text-sm text-center"
+              >0</span
+            ></a
+          >
+          <a
+            id="LogoutBtn"
+            href="authentication.html"
+            class="bg-red-500 hover:bg-red-600 text-white text-lg px-4 py-2 rounded-lg transition"
+            >Logout</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container mx-auto p-6">
+      <h2 class="text-2xl font-semibold mb-6">Your Cart</h2>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <!-- Cart Item -->
+        <div id="cartParent"></div>
+
+        <!-- Repeat Cart Item as needed -->
+        <div
+          class="flex justify-between items-center border-t border-gray-300 pt-4 mt-4"
+        >
+          <span class="text-xl font-bold">Total:</span>
+          <span id="TotalPrice" class="text-xl font-bold">$20.00</span>
+        </div>
+        <!-- Payment Button -->
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white mt-5 w-full text-xl font-bold py-4 px-6 rounded-lg shadow-lg transition-transform transform focus:outline-none focus:ring-green-300"
+        >
+          Payment
+        </button>
+      </div>
+    </div>
+    <!-- Success Message -->
+    <div
+      id="messageItemRemoved"
+      class="bg-white shadow-lg p-2 rounded-lg max-w-sm w-full text-center absolute top-10 right-5 opacity-0 transition-all"
+    ></div>
+    <script src="Js/cart.js"></script>
+  </body>
+</html>
